@@ -21,8 +21,6 @@ action quality assessment, skills assessment, action understanding, video unders
 1. Human Motion Analysis
 1. Hand-Eye Behaviour Analytics for Children with Autism Spectrum Disorder
 #### Journal
-## 参考文献（按出现顺序编号）
-
 1. Keep your eye on the best: contrastive regression transformer for skill assessment in robotic surgery  
 2. Evaluation of objective tools and artificial intelligence in robotic surgery technical skills assessment: a systematic review  
 3. EGCN++: A New Fusion Strategy for Ensemble Learning in Skeleton-Based Rehabilitation Exercise Assessment  

@@ -14,7 +14,7 @@ action quality assessment, skills assessment, action understanding, video unders
 
 ---
 
-### Reference
+### Reference List
 #### Thesis
 1. Towards Interaction-level Video Action Understanding
 1. Learning Strategies for Parkinson’s Disease Severity Assessment

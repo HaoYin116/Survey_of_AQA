@@ -12,7 +12,7 @@ Action Quality Assessment (AQA)---the ability to quantify the quality of human m
 ---
 
 ### Key Words
-action quality assessment, skills assessment, action understanding, video understanding, computer vision, deep learning, survey
+action quality assessment, skills assessment, action understanding, video understanding, computer vision, deep learning, AQA survey
 
 ---
 

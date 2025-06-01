@@ -2,7 +2,7 @@
 [![Project Page](https://img.shields.io/badge/Project-Page-8A2BE2)](https://haoyin116.github.io/Survey_of_AQA/)
 [![Page Views Count](https://badges.toozhao.com/badges/01JJ5ZP9V9EDWA7Z51BSVJKK50/blue.svg)](https://badges.toozhao.com/stats/01JJ5ZP9V9EDWA7Z51BSVJKK50 "Get your own page views count badge on badges.toozhao.com")
 
->  🎉🎉🎉 To accelerate research in AQA, we are releasing the FLEX dataset. Please see in [here](https://haoyin116.github.io/FLEX_Dataset/).
+>  🎉🎉🎉 To accelerate research in AQA, we are releasing the FLEX dataset. Please see in [here](https://haoyin116.github.io/FLEX_Dataset/). (06/01/2025)
 
 >  👀👀👀 The complete survey can be found in arXiv! Welcome to cite! (02/07/2025)
 

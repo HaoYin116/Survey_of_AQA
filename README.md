@@ -1,6 +1,11 @@
-# A Decade of Action Quality Assessment: Largest Systematic Survey of Trends, Challenges, and Future Directions
-[![Project Page](https://img.shields.io/badge/Project-Page-8A2BE2)](https://haoyin116.github.io/Survey_of_AQA/)
-[![Page Views Count](https://badges.toozhao.com/badges/01JJ5ZP9V9EDWA7Z51BSVJKK50/blue.svg)](https://badges.toozhao.com/stats/01JJ5ZP9V9EDWA7Z51BSVJKK50 "Get your own page views count badge on badges.toozhao.com")
+# <p align="center">A Decade of Action Quality Assessment: Largest Systematic Survey of Trends, Challenges, and Future Directions</p>
+
+### <p align="center">*Hao Yin, Paritosh Parmar, Daoliang Xu, Yang Zhang, Weiwei Fu, Tianyou Zheng*</p>
+
+<p align="center">
+  <a href="https://haoyin116.github.io/Survey_of_AQA/"><img src="https://img.shields.io/badge/Project-Page-8A2BE2" alt="Project Page"></a>
+  <a href="https://badges.toozhao.com/stats/01JJ5ZP9V9EDWA7Z51BSVJKK50" title="Get your own page views count badge on badges.toozhao.com"><img src="https://badges.toozhao.com/badges/01JJ5ZP9V9EDWA7Z51BSVJKK50/blue.svg" alt="Page Views Count"></a>
+</p>
 
 >  🎉🎉🎉 To accelerate research in AQA, we are releasing the FLEX dataset. Please see in [here](https://haoyin116.github.io/FLEX_Dataset/). (06/01/2025)
 

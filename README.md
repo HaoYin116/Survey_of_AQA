@@ -8,6 +8,8 @@
   <!-- <a href="https://badges.toozhao.com/stats/01JJ5ZP9V9EDWA7Z51BSVJKK50" title="Get your own page views count badge on badges.toozhao.com"><img src="https://badges.toozhao.com/badges/01JJ5ZP9V9EDWA7Z51BSVJKK50/blue.svg" alt="Page Views Count"></a> -->
 </p>
 
+>  🎉🎉🎉 Our survey is accepted by IJCV!  (10/01/2025)
+
 >  🎉🎉🎉 To accelerate research in AQA, we are releasing the FLEX dataset. Please see in [here](https://haoyin116.github.io/FLEX_Dataset/). (06/01/2025)
 
 >  👀👀👀 The complete survey can be found in arXiv! Welcome to cite! (02/07/2025)

@@ -1,4 +1,4 @@
-# <p align="center">A Decade of Action Quality Assessment: Largest Systematic Survey of Trends, Challenges, and Future Directions</p>
+# <p align="center">A Decade of Action Quality Assessment: Largest Systematic Survey of Trends, Challenges, and Future Directions [IJCV, 2025]</p>
 
 ### <p align="center">*Hao Yin, Paritosh Parmar, Daoliang Xu, Yang Zhang, Weiwei Fu, Tianyou Zheng*</p>
 

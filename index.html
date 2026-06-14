@@ -1,293 +1,897 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="google-site-verification" content="Dst6Y9H2OFjWN1-A6Fbdb3zR8XQkym_Lg8k7KJ9ZMSQ" />
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
-
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-  <title>Survey of Action Quality Assessment</title>
-  <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> --> 
-     <!-- Here: you may change to a favicon! We are using an SVG for faster load times and max quality -->
-  <link rel="icon" type="image/svg" href='static/images/SIBET.png' />
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
-
-
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
-  <link rel="stylesheet" href="static/css/code.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
-  <script src="static/js/copy-button.js"></script>
-  <textarea id="hidden-textarea" style="position: absolute; left: -9999px;" aria-hidden="true"></textarea>
+    <!-- ── SEO & Social Meta ── -->
+    <meta name="google-site-verification" content="Dst6Y9H2OFjWN1-A6Fbdb3zR8XQkym_Lg8k7KJ9ZMSQ" />
+    <meta name="description" content="A Decade of Action Quality Assessment: Largest Systematic Survey of Trends, Challenges, and Future Directions. Systematically reviewing 214 papers across 33 datasets and 7 principal research trends. Published in IJCV 2026.">
+    <meta name="keywords" content="action quality assessment, skills assessment, action understanding, video understanding, computer vision, deep learning, AQA survey, sports, rehabilitation, surgery, fitness, dance, figure skating, diving">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://haoyin116.github.io/Survey_of_AQA/">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="A Decade of Action Quality Assessment: Largest Systematic Survey"/>
+    <meta property="og:description" content="Systematically reviewing 214 papers across 33 datasets and 7 principal research trends in AQA. IJCV 2026."/>
+    <meta property="og:url" content="https://haoyin116.github.io/Survey_of_AQA/"/>
+    <meta property="og:image" content="static/images/og_banner.png"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta property="og:type" content="article"/>
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:title" content="A Decade of Action Quality Assessment: Largest Systematic Survey">
+    <meta name="twitter:description" content="Systematic review of 214 papers, 33 datasets, and 7 research trends in AQA.">
+    <meta name="twitter:image" content="static/images/twitter_banner.png">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ScholarlyArticle",
+      "headline": "A Decade of Action Quality Assessment: Largest Systematic Survey of Trends, Challenges, and Future Directions",
+      "author": [
+        {"@type": "Person", "name": "Hao Yin"},
+        {"@type": "Person", "name": "Paritosh Parmar"},
+        {"@type": "Person", "name": "Daoliang Xu"},
+        {"@type": "Person", "name": "Yang Zhang"},
+        {"@type": "Person", "name": "Tianyou Zheng"},
+        {"@type": "Person", "name": "Weiwei Fu"}
+      ],
+      "datePublished": "2026",
+      "publisher": {"@type": "Organization", "name": "International Journal of Computer Vision (IJCV)"},
+      "description": "A comprehensive survey of Action Quality Assessment reviewing over 200 papers across 33 datasets and 7 principal research trends.",
+      "keywords": "action quality assessment, skills assessment, video understanding, computer vision, deep learning, survey"
+    }
+    </script>
+    
+    <title>A Decade of AQA — Largest Systematic Survey (IJCV 2026)</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="static/images/SIBET.png">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg: #fdfaf6;
+            --surface: #ffffff;
+            --border: #ebe4da;
+            --border-soft: #f2ede5;
+            --text: #2c2416;
+            --text-mid: #5c5546;
+            --text-light: #8c8472;
+            --accent: #b8753e;
+            --accent-deep: #8a4f28;
+            --accent-warm: #f5e6d3;
+            --accent-pale: #fdf7f0;
+            --radius: 10px;
+            --radius-sm: 6px;
+            --shadow: 0 1px 2px rgba(0,0,0,.04), 0 4px 16px rgba(0,0,0,.04);
+            --shadow-lg: 0 1px 2px rgba(0,0,0,.03), 0 8px 32px rgba(0,0,0,.06);
+            --font-display: 'Crimson Text', 'Georgia', 'Times New Roman', serif;
+            --font-body: 'DM Sans', -apple-system, 'Segoe UI', sans-serif;
+            --font-mono: 'Source Code Pro', 'SF Mono', 'Consolas', monospace;
+            --max: 880px;
+            --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
 
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-<!-- Note: comment below if not needed for faster loading -->
-<!-- Syntax highlighting for code cells -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
-<script>hljs.highlightAll();</script>
+        html { scroll-behavior: smooth; scroll-padding-top: 70px; }
 
-<!-- Math rendering -->
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
-    onload="renderMathInElement(document.body);"></script>
+        body {
+            font-family: var(--font-body);
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.75;
+            font-size: 15px;
+            -webkit-font-smoothing: antialiased;
+        }
 
+        .accent-bar {
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-deep), var(--accent), #d4a373, var(--accent), var(--accent-deep));
+        }
 
+        /* ── Nav ── */
+        .nav {
+            position: sticky; top: 0; z-index: 100;
+            background: rgba(253,250,246,.92);
+            backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border-soft);
+        }
+        .nav-inner {
+            max-width: var(--max); margin: 0 auto;
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 0 1.5rem; height: 54px;
+        }
+        .nav-brand { font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; color: var(--accent-deep); letter-spacing: -0.01em; white-space: nowrap; }
+        .nav-links { display: flex; gap: 0.1rem; list-style: none; flex-wrap: wrap; }
+        .nav-links a { padding: 0.3rem 0.55rem; border-radius: 6px; font-size: 0.78rem; font-weight: 500; color: var(--text-mid); text-decoration: none; transition: var(--transition); white-space: nowrap; }
+        .nav-links a:hover, .nav-links a.active { background: var(--accent-pale); color: var(--accent); }
+        .nav-toggle { display: none; background: none; border: none; font-size: 1.3rem; cursor: pointer; color: var(--text-mid); padding: 0.3rem; }
+
+        /* ── Hero ── */
+        .hero {
+            max-width: var(--max); margin: 0 auto;
+            padding: 3.5rem 1.5rem 2rem; text-align: center;
+        }
+        .hero-badge {
+            display: inline-block; font-size: 0.75rem; font-weight: 600;
+            letter-spacing: 0.06em; text-transform: uppercase;
+            color: var(--accent); background: var(--accent-pale);
+            padding: 0.3rem 1rem; border-radius: 20px; margin-bottom: 0.8rem;
+        }
+        .hero-badge-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; margin-bottom: 1.4rem; }
+        .hero h1 {
+            font-family: var(--font-display); font-size: 2rem; font-weight: 700;
+            line-height: 1.4; color: #1a1410; letter-spacing: -0.01em;
+            margin-bottom: 1.2rem;
+        }
+        .hero h1 em { font-style: italic; color: var(--accent); }
+        .hero .authors-line { font-size: 1rem; color: var(--text-mid); line-height: 2; }
+        .hero .authors-line sup { font-size: 0.65rem; color: var(--accent); margin: 0 1px; }
+        .hero .affiliations { font-size: 0.78rem; color: var(--text-light); margin-top: 0.8rem; line-height: 1.8; }
+        .hero .meta { margin-top: 1.2rem; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.5rem 1.2rem; font-size: 0.82rem; color: var(--text-mid); }
+        .hero .meta .divider { width: 3px; height: 3px; background: var(--border); border-radius: 50%; }
+        .hero-buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.7rem; margin-top: 1.8rem; }
+        .btn {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            padding: 0.55rem 1.3rem; border-radius: 24px;
+            font-size: 0.83rem; font-weight: 600; text-decoration: none;
+            transition: var(--transition); cursor: pointer; border: none; font-family: var(--font-body);
+        }
+        .btn-fill { background: var(--accent); color: #fff; }
+        .btn-fill:hover { background: var(--accent-deep); color: #fff; transform: translateY(-1px); box-shadow: 0 4px 12px rgba(184,117,62,.25); }
+        .btn-ghost { background: #fff; color: var(--text); border: 1.5px solid var(--border); }
+        .btn-ghost:hover { background: var(--accent-pale); border-color: var(--accent); color: var(--accent-deep); }
+        .btn-blue { background: var(--accent-deep); color: #fff; }
+        .btn-blue:hover { background: #6a3a1a; color: #fff; transform: translateY(-1px); box-shadow: 0 4px 12px rgba(138,79,40,.3); }
+
+        /* ── Main ── */
+        .main { max-width: var(--max); margin: 0 auto; padding: 0 1.5rem 4rem; }
+
+        .card {
+            background: var(--surface); border: 1px solid var(--border-soft);
+            border-radius: var(--radius); padding: 2rem 2.5rem;
+            margin-bottom: 1.4rem; box-shadow: var(--shadow);
+            transition: box-shadow var(--transition);
+        }
+        .card:hover { box-shadow: var(--shadow-lg); }
+        .card h2 {
+            font-family: var(--font-display); font-size: 1.3rem; font-weight: 700;
+            color: #1a1410; margin-bottom: 1.1rem;
+            display: flex; align-items: center; gap: 0.6rem;
+        }
+        .card h2::after {
+            content: ''; flex: 1; height: 1px;
+            background: linear-gradient(90deg, var(--border-soft), transparent);
+        }
+        .card h2 .num {
+            font-size: 0.72rem; font-weight: 600; color: var(--accent);
+            background: var(--accent-pale); width: 28px; height: 28px;
+            display: flex; align-items: center; justify-content: center;
+            border-radius: 50%; flex-shrink: 0;
+        }
+        .card h3 {
+            font-family: var(--font-display); font-size: 1.08rem; font-weight: 600;
+            color: #2c2416; margin: 1.5rem 0 0.7rem;
+        }
+        .card h4 {
+            font-size: 0.88rem; font-weight: 600; color: var(--accent-deep);
+            margin: 1rem 0 0.5rem; font-family: var(--font-body);
+        }
+
+        /* ── Abstract ── */
+        .abstract-box {
+            background: linear-gradient(135deg, var(--accent-pale), #fffbf5);
+            border: 1px solid var(--accent-warm); border-radius: var(--radius-sm);
+            padding: 1.3rem 1.6rem; margin-bottom: 1rem;
+        }
+        .abstract-box p { font-family: var(--font-display); font-size: 0.93rem; color: #4a3f30; line-height: 1.8; }
+        .tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+        .tag { font-size: 0.73rem; font-weight: 500; color: var(--accent-deep); background: var(--accent-pale); padding: 0.2rem 0.75rem; border-radius: 20px; letter-spacing: 0.01em; }
+
+        /* ── Stats ── */
+        .stats-row {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 0.8rem; margin: 1rem 0;
+        }
+        .stat-card { text-align: center; padding: 1rem 0.8rem; background: #fdfaf6; border-radius: var(--radius-sm); border: 1px solid var(--border-soft); }
+        .stat-num { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--accent-deep); }
+        .stat-label { font-size: 0.73rem; color: var(--text-light); margin-top: 0.2rem; }
+
+        /* ── Insight ── */
+        .insight {
+            background: #faf8f4; border-left: 3px solid var(--accent);
+            padding: 0.9rem 1.2rem; margin: 1rem 0;
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+            font-size: 0.9rem; color: var(--text-mid); font-style: italic;
+        }
+
+        /* ── Bullet List ── */
+        .simple-list { list-style: none; }
+        .simple-list li {
+            padding: 0.4rem 0 0.4rem 1.4rem; position: relative;
+            font-size: 0.88rem; color: var(--text-mid);
+        }
+        .simple-list li::before {
+            content: ''; position: absolute; left: 0; top: 0.9rem;
+            width: 7px; height: 7px; background: var(--accent);
+            border-radius: 2px; transform: rotate(45deg);
+        }
+        .simple-list strong { color: var(--text); }
+
+        /* ── Figure ── */
+        .fig {
+            text-align: center; border: 1px dashed var(--border);
+            border-radius: var(--radius-sm); padding: 1.3rem 1.2rem;
+            margin: 1rem 0; background: #fdfaf6; transition: var(--transition);
+        }
+        .fig:hover { border-color: var(--accent); background: var(--accent-pale); }
+        .fig object, .fig img { max-width: 100%; height: auto; border-radius: 3px; }
+        .fig-caption { font-size: 0.78rem; color: var(--text-light); margin-top: 0.6rem; line-height: 1.5; }
+        .fig-caption strong { color: var(--text-mid); }
+
+        /* ── Tables ── */
+        .table-wrap { overflow-x: auto; margin: 1rem 0; }
+        .data-table {
+            width: 100%; border-collapse: collapse; font-size: 0.8rem;
+        }
+        .data-table thead th {
+            background: var(--accent-deep); color: #fff; padding: 0.55rem 0.7rem;
+            font-weight: 600; text-align: left; font-size: 0.76rem;
+            white-space: nowrap;
+        }
+        .data-table tbody td {
+            padding: 0.45rem 0.7rem; border-bottom: 1px solid var(--border-soft);
+            font-size: 0.8rem; vertical-align: middle;
+        }
+        .data-table tbody tr:hover { background: var(--accent-pale); }
+        .data-table tbody tr:nth-child(even) { background: #faf8f5; }
+        .data-table tbody tr:nth-child(even):hover { background: var(--accent-pale); }
+        .data-table .domain-tag {
+            font-size: 0.7rem; font-weight: 600; padding: 0.15rem 0.6rem;
+            border-radius: 12px; white-space: nowrap; display: inline-block;
+        }
+        .domain-sport { background: #ffe8e0; color: #c44b2a; }
+        .domain-surgery { background: #ffe0e0; color: #b83030; }
+        .domain-rehab { background: #e0e4f0; color: #4a5580; }
+        .domain-daily { background: #dce8e0; color: #3d6b4f; }
+        .domain-music { background: #f5e0f0; color: #8a3d7a; }
+        .domain-fitness { background: #f0e0d8; color: #7a4a38; }
+        .domain-im { background: #f5efd8; color: #8a7030; }
+        .domain-dance { background: #d8f0e8; color: #2e6b55; }
+        .domain-aigv { background: #d8e0f5; color: #354a7a; }
+
+        /* Dataset link icon */
+        .ds-link { color: var(--accent); text-decoration: none; font-size: 0.75rem; margin-left: 0.15rem; }
+        .ds-link:hover { text-decoration: underline; color: var(--accent-deep); }
+
+        /* ── Trend Grid ── */
+        .trend-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 0.9rem; margin: 1.2rem 0;
+        }
+        .trend-card {
+            background: #fdfaf6; border: 1px solid var(--border-soft);
+            border-radius: var(--radius-sm); padding: 1.1rem 1.2rem;
+            transition: var(--transition);
+        }
+        .trend-card:hover { border-color: var(--accent); box-shadow: var(--shadow); }
+        .trend-card h4 { font-size: 0.9rem; margin: 0 0 0.5rem; color: var(--accent-deep); font-family: var(--font-body); }
+        .trend-card p { font-size: 0.82rem; color: var(--text-mid); line-height: 1.6; }
+        .trend-card .trend-num { 
+            font-family: var(--font-display); font-size: 1.6rem; font-weight: 700;
+            color: var(--accent); opacity: 0.2; float: right; margin-top: -0.3rem;
+        }
+        .trend-card ul { margin: 0.5rem 0 0; padding-left: 1.1rem; }
+        .trend-card ul li { font-size: 0.8rem; color: var(--text-mid); margin-bottom: 0.2rem; }
+
+        /* ── Comparison Table ── */
+        .compare-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; margin: 1rem 0; }
+        .compare-table thead th { background: var(--accent-deep); color: #fff; padding: 0.5rem 0.7rem; font-weight: 600; text-align: left; font-size: 0.76rem; }
+        .compare-table tbody td { padding: 0.45rem 0.7rem; border-bottom: 1px solid var(--border-soft); font-size: 0.8rem; }
+        .compare-table tbody tr:hover { background: var(--accent-pale); }
+        .compare-table tbody tr:nth-child(even) { background: #faf8f5; }
+        .compare-table tbody tr:nth-child(even):hover { background: var(--accent-pale); }
+        .score-high { color: #8a4f28; font-weight: 700; }
+        .score-mid { color: var(--accent-deep); font-weight: 600; }
+
+        /* ── Figure Row ── */
+        .fig-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1rem 0; }
+
+        /* ── Timeline ── */
+        .timeline { position: relative; padding-left: 2rem; margin: 1rem 0; }
+        .timeline::before {
+            content: ''; position: absolute; left: 0.45rem; top: 0; bottom: 0;
+            width: 2px; background: var(--accent-warm);
+        }
+        .tl-item { position: relative; margin-bottom: 1.2rem; }
+        .tl-item::before {
+            content: ''; position: absolute; left: -1.6rem; top: 0.5rem;
+            width: 10px; height: 10px; background: var(--accent);
+            border-radius: 50%; border: 2px solid #fff; box-shadow: 0 0 0 2px var(--accent-warm);
+        }
+        .tl-year { font-weight: 700; color: var(--accent-deep); font-size: 0.88rem; margin-bottom: 0.2rem; }
+        .tl-content { font-size: 0.85rem; color: var(--text-mid); line-height: 1.6; }
+
+        /* ── BibTeX ── */
+        .bib-wrap { position: relative; }
+        .bib-wrap pre {
+            background: #faf8f4; border: 1px solid var(--border-soft);
+            border-radius: var(--radius-sm); padding: 1.2rem;
+            font-family: var(--font-mono); font-size: 0.76rem;
+            line-height: 1.7; overflow-x: auto; white-space: pre-wrap; word-break: break-word;
+        }
+        .bib-btn {
+            position: absolute; top: 0.5rem; right: 0.5rem;
+            background: #fff; border: 1px solid var(--border);
+            padding: 0.25rem 0.75rem; border-radius: 14px;
+            font-size: 0.72rem; font-weight: 500; cursor: pointer;
+            font-family: var(--font-body); transition: var(--transition);
+        }
+        .bib-btn:hover { background: var(--accent-pale); border-color: var(--accent); }
+
+        /* ── Footer ── */
+        .footer { text-align: center; padding: 2rem 1.5rem; border-top: 1px solid var(--border-soft); font-size: 0.78rem; color: var(--text-light); }
+        .footer a { color: var(--accent); text-decoration: none; }
+        .footer a:hover { text-decoration: underline; }
+
+        /* ── Toast ── */
+        .toast {
+            position: fixed; bottom: 2rem; left: 50%; transform: translateX(-50%);
+            background: #3a3028; color: #fff; padding: 0.5rem 1.2rem; border-radius: 18px;
+            font-size: 0.78rem; z-index: 999; opacity: 0; transition: opacity .3s; pointer-events: none;
+        }
+        .toast.show { opacity: 1; }
+
+        /* ── Responsive ── */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.4rem; }
+            .card { padding: 1.3rem; }
+            .nav-links { display: none; flex-direction: column; position: absolute; top: 54px; left: 0; right: 0; background: #fff; padding: 0.5rem; border-bottom: 1px solid var(--border-soft); box-shadow: var(--shadow-lg); }
+            .nav-links.open { display: flex; }
+            .nav-toggle { display: block; }
+            .hero-buttons { flex-direction: column; align-items: center; }
+            .btn { width: 100%; max-width: 240px; justify-content: center; }
+            .stats-row { grid-template-columns: repeat(2, 1fr); }
+            .trend-grid { grid-template-columns: 1fr; }
+            .fig-row { grid-template-columns: 1fr; }
+            .data-table { font-size: 0.72rem; }
+        }
+        @media (max-width: 480px) {
+            .hero { padding: 2rem 1rem 1.2rem; }
+            .hero h1 { font-size: 1.15rem; }
+            .card { padding: 1rem; border-radius: 0; }
+            .abstract-box { padding: 1rem; }
+        }
+    </style>
 </head>
-
 <body>
 
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">A Decade of Action Quality Assessment: Largest Systematic Survey of Trends, Challenges, and Future Directions</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-                <span class="author-block">
-                  <a href="https://orcid.org/0009-0001-0943-3502" target="_blank">Hao Yin</a><sup>1,2*</sup>,</span>
-                <span class="author-block">
-                  <a href="https://paritoshparmar.github.io/" target="_blank">Paritosh Parmar</a><sup>3*</sup>,</span>
-                <span class="author-block">
-                  <a href="https://orcid.org/0009-0007-9942-3204" target="_blank">Daoliang Xu</a><sup>1,2</sup>,</span>
-                <span class="author-block">
-                  <a>Yang Zhang</a><sup>2</sup>,</span>
-                <span class="author-block">
-                  <a href="https://orcid.org/0000-0002-2310-2988" target="_blank">Tianyou Zheng</a><sup>2</sup>,</span>
-                <span class="author-block">
-                  <a href="https://orcid.org/0000-0001-7192-3118" target="_blank">Weiwei Fu</a><sup>1,2</sup>,</span>
-                <span class="author-block">   
-                </div>
+<div class="accent-bar"></div>
 
-                  <div class="is-size-5 publication-authors">
-                    <div><sup>1</sup> School of Biomedical Engineering (Suzhou), Division of Life Sciences and Medicine, USTC</div>
-                    <div><sup>2</sup> Suzhou Institute of Biomedical Engineering and Technology, CAS</div>
-                    <div><sup>3</sup> Institute of High-Performance Computing, A*STAR</div>
-                    <small><br><sup>*</sup>Indicates Equal Contribution</small>
-                    <br> <img src="https://badges.toozhao.com/badges/01JJ5ZP9V9EDWA7Z51BSVJKK50/blue.svg" />
-                    <br> Accepted to IJCV-2025
-                  </div>
+<!-- ════════════════════ Navigation ════════════════════ -->
+<nav class="nav">
+    <div class="nav-inner">
+        <span class="nav-brand">A Decade of AQA</span>
+        <button class="nav-toggle" aria-label="Menu" onclick="toggleNav()">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#abstract">Abstract</a></li>
+            <li><a href="#highlights">Highlights</a></li>
+            <li><a href="#datasets">Datasets</a></li>
+            <li><a href="#trends">Trends</a></li>
+            <li><a href="#future">Future</a></li>
+            <li><a href="#bibtex">Cite</a></li>
+        </ul>
+    </div>
+</nav>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="static/pdfs/A_Decade_of_AQA.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper-Arxiv</span>
-                      </a>
-                    </span>
+<!-- ════════════════════ Hero ════════════════════ -->
+<header class="hero">
+    <div class="hero-badge-container">
+        <span class="hero-badge">IJCV 2026</span>
+    </div>
+    <h1>A Decade of Action Quality Assessment:<br><em>Largest Systematic Survey</em> of Trends, Challenges, and Future Directions</h1>
 
-                    <span class="link-block">
-                        <a href="https://link.springer.com/article/10.1007/s11263-025-02672-4" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper-IJCV</span>
-                      </a>
-                    </span>
+    <div class="authors-line">
+        Hao Yin<sup>1,2*</sup> &ensp;·&ensp;
+        Paritosh Parmar<sup>3*</sup> &ensp;·&ensp;
+        Daoliang Xu<sup>1,2</sup> &ensp;·&ensp;
+        Yang Zhang<sup>2</sup><br>
+        Tianyou Zheng<sup>2 ✉</sup> &ensp;·&ensp;
+        Weiwei Fu<sup>1,2 ✉</sup>
+    </div>
 
-                    <!-- Supplementary PDF link
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span> -->
+    <div class="affiliations">
+        <sup>1</sup> USTC &emsp; <sup>2</sup> SIBET, CAS &emsp; <sup>3</sup> IHPC, A*STAR, Singapore
+    </div>
 
-                  <span class="link-block">
-                    <a href="https://github.com/HaoYin116/Survey_of_AQA/" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Data</span>
-                  </a>
-                </span>
+    <div class="meta">
+        <span>* Equal contribution</span>
+        <span class="divider"></span>
+        <span>✉ Corresponding authors</span>
+    </div>
 
-                <!-- ArXiv abstract Link
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>-->
+    <div class="hero-buttons">
+        <a href="https://link.springer.com/article/10.1007/s11263-025-02672-4" class="btn btn-fill" target="_blank" rel="noopener">📰 IJCV Paper</a>
+        <a href="https://github.com/HaoYin116/Survey_of_AQA" class="btn btn-ghost" target="_blank" rel="noopener">💻 GitHub Repo</a>
+        <a href="#bibtex" class="btn btn-ghost">📝 BibTeX</a>
+    </div>
+</header>
+
+<!-- ════════════════════ Main Content ════════════════════ -->
+<main class="main">
+
+    <!-- ── 1. Abstract ── -->
+    <section class="card" id="abstract">
+        <h2><span class="num">§</span> Abstract</h2>
+        <div class="abstract-box">
+            <p>
+                Action Quality Assessment (AQA)&mdash;the ability to quantify the quality of human motion, actions, or skill levels and provide feedback&mdash;has far-reaching implications in areas such as low-cost physiotherapy, sports training, and workforce development. As such, it has become a critical field in computer vision and video understanding over the past decade. In this paper, we present a thorough survey of the AQA landscape, <strong>systematically reviewing over 200 research papers</strong> using the PRISMA framework. We begin by covering foundational concepts and definitions, then move to general frameworks and performance metrics, and finally discuss the latest advances in methodologies and datasets. This survey provides a detailed analysis of research trends, performance comparisons across 33 datasets and 7 principal research trends, challenges, and future directions. Through this work, we aim to offer a valuable resource for both newcomers and experienced researchers, promoting further exploration and progress in AQA.
+            </p>
+        </div>
+        <div class="tags">
+            <span class="tag">Action Quality Assessment</span>
+            <span class="tag">Skills Assessment</span>
+            <span class="tag">Video Understanding</span>
+            <span class="tag">Computer Vision</span>
+            <span class="tag">Deep Learning</span>
+            <span class="tag">Systematic Survey</span>
+            <span class="tag">PRISMA</span>
+        </div>
+    </section>
+
+    <!-- ── 2. Key Highlights ── -->
+    <section class="card" id="highlights">
+        <h2><span class="num">★</span> Survey at a Glance</h2>
+
+        <div class="stats-row">
+            <div class="stat-card">
+                <div class="stat-num">214</div>
+                <div class="stat-label">Papers Reviewed</div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Action Quality Assessment (AQA)---the ability to quantify the quality of human motion, actions, or skill levels and provide feedback---has far-reaching implications in areas such as low-cost physiotherapy, sports training, and workforce development. As such, it has become a critical field in computer vision and video understanding over the past decade. Significant progress has been made in AQA methodologies, datasets, and applications, yet a pressing need remains for a comprehensive synthesis of this rapidly evolving field. In this paper, we present a thorough survey of the AQA landscape, systematically reviewing over 200 research papers using the preferred reporting items for systematic reviews and meta-analyses (PRISMA) framework. We begin by covering foundational concepts and definitions, then move to general frameworks and performance metrics, and finally discuss the latest advances in methodologies and datasets. This survey provides a detailed analysis of research trends, performance comparisons, challenges, and future directions. Through this work, we aim to offer a valuable resource for both newcomers and experienced researchers, promoting further exploration and progress in AQA.
-            <br>
-            <be><b>Key Words: action quality assessment, skills assessment, action understanding, video understanding, computer vision, deep learning, survey<b>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-
-        <div class="item has-text-centered">
-          <!-- Updated image with custom width and height -->
-          <img src="static/images/Fig1_AQA.svg" alt="What is AQA?" style="width: 100%; max-width: 800px; height: auto;"/>
-          <h2 class="subtitle">
-            AQA model plays the role of referee to evaluate how well actions are performed and score the skill level of performers.
-          </h2>
+            <div class="stat-card">
+                <div class="stat-num">33</div>
+                <div class="stat-label">Public Datasets</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-num">9</div>
+                <div class="stat-label">Application Domains</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-num">7</div>
+                <div class="stat-label">Principal Trends</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-num">2014–2025</div>
+                <div class="stat-label">Coverage Period</div>
+            </div>
         </div>
 
-        <div class="item has-text-centered">
-          <!-- Updated image with custom width and height -->
-          <img src="static/images/Fig2_Num.png" alt="Paper number" style="width: 100%; max-width: 800px; height: auto;"/>
-          <h2 class="subtitle">
-            The number of papers related to AQA over the past decade.
-          </h2>
+        <ul class="simple-list">
+            <li><strong>Largest</strong> AQA survey to date — 214 papers, 33 datasets, 9 domains, systematically reviewed via PRISMA</li>
+            <li>Comprehensive dataset taxonomy across <strong>Surgery, Rehabilitation, Daily Activities, Music, Fitness, Industrial Manufacturing, Dance, AI-Generated Videos, and Sports</strong></li>
+            <li>7 principal research trends: <em>Fine-grained, Multimodal, Generalization, Continual Learning, Explainable, Comprehensive, Self-supervised</em> AQA</li>
+            <li>Detailed performance comparison tables with <strong>Spearman's ρ</strong> and <strong>Relative ℓ₂</strong> for all major methods across MTL-AQA, FineDiving, AQA-7 and more</li>
+            <li>In-depth analysis of <strong>challenges &amp; future opportunities</strong>: dataset scale, subject diversity, physiological multimodality, interpretability, real-time deployment, and AGI in Action</li>
+            <li>First survey to cover <strong>AI-Generated Video</strong> (GAIA), <strong>Continual Learning</strong>, and <strong>Causal Inference</strong> paradigms in AQA</li>
+        </ul>
+
+        <div class="fig-row">
+            <div class="fig">
+                <object data="Fig1_AQA.pdf" type="application/pdf" width="100%" height="250" style="border:none">
+                    <p>📊 <a href="Fig1_AQA.pdf" target="_blank">Open Overview Figure (PDF)</a></p>
+                </object>
+                <div class="fig-caption">
+                    <strong>Taxonomy overview.</strong> The AQA landscape: problem definition, datasets across 9 domains, 7 methodology trends, and future directions.
+                </div>
+            </div>
+            <div class="fig">
+                <object data="Fig6_Pipeline.pdf" type="application/pdf" width="100%" height="250" style="border:none">
+                    <p>📊 <a href="Fig6_Pipeline.pdf" target="_blank">Open AQA Pipeline (PDF)</a></p>
+                </object>
+                <div class="fig-caption">
+                    <strong>AQA pipeline.</strong> General framework: from input modalities through feature extraction, quality assessment, and downstream feedback.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── 3. Datasets ── -->
+    <section class="card" id="datasets">
+        <h2><span class="num">1</span> AQA Datasets — 33 Benchmarks Across 9 Domains</h2>
+
+        <div class="insight">
+            Following PRISMA guidelines, we identify <strong>33 publicly available datasets</strong> spanning 9 domains since 2014. The field has grown from 2 datasets in 2014 to 33 today — a 16.5× expansion in a decade. Click 🔗 for dataset or project links.
         </div>
 
-        <div class="item has-text-centered">
-          <!-- Updated image with custom width and height -->
-          <img src="static/images/Fig7_Mapping.png" alt="Paper number" style="width: 100%; max-width: 800px; height: auto;"/>
-          <h2 class="subtitle">
-            Different formats of mapping techniques used in AQA.
-          </h2>
+        <!-- Dataset Summary Table -->
+        <div class="table-wrap">
+            <table class="data-table">
+                <thead>
+                    <tr><th>Dataset</th><th>Year</th><th>Samples</th><th>Avg. Dur.</th><th>Annotation</th><th>Domain</th><th>Link</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MIT-Dive</td><td>2014</td><td>159</td><td>~2.5s</td><td>Score</td>
+                        <td><span class="domain-tag domain-sport">Sport</span></td>
+                        <td><a href="http://rtis.oit.unlv.edu/datasets.html" class="ds-link" target="_blank" rel="noopener" title="UNLV RTIS Datasets">🔗</a></td>
+                    </tr>
+                    <tr>
+                        <td>MIT-Skate</td><td>2014</td><td>150</td><td>~175s</td><td>Score</td>
+                        <td><span class="domain-tag domain-sport">Sport</span></td>
+                        <td><a href="http://rtis.oit.unlv.edu/datasets.html" class="ds-link" target="_blank" rel="noopener" title="UNLV RTIS Datasets">🔗</a></td>
+                    </tr>
+                    <tr>
+                        <td>JIGSAWS</td><td>2014</td><td>103</td><td>~92s</td><td>Score, Action</td>
+                        <td><span class="domain-tag domain-surgery">Surgery</span></td>
+                        <td><a href="https://cirl.lcsr.jhu.edu/research/hmm/datasets/jigsaws_release" class="ds-link" target="_blank" rel="noopener">🔗</a></td>
+                    </tr>
+                    <tr>
+                        <td>UNLV-Dive</td><td>2017</td><td>370</td><td>~3.8s</td><td>Score</td>
+                        <td><span class="domain-tag domain-sport">Sport</span></td>
+                        <td><a href="http://rtis.oit.unlv.edu/datasets.html" class="ds-link" target="_blank" rel="noopener" title="UNLV RTIS Datasets">🔗</a></td>
+                    </tr>
+                    <tr>
+                        <td>UNLV-Vault</td><td>2017</td><td>176</td><td>~2.8s</td><td>Score</td>
+                        <td><span class="domain-tag domain-sport">Sport</span></td>
+                        <td><a href="http://rtis.oit.unlv.edu/datasets.html" class="ds-link" target="_blank" rel="noopener" title="UNLV RTIS Datasets">🔗</a></td>
+                    </tr>
+                    <tr>
+                        <td>UI-PRMD</td><td>2018</td><td>100</td><td>—</td><td>Grade, Action</td>
+                        <td><span class="domain-tag domain-rehab">Rehab</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>EPIC-Skill</td><td>2018</td><td>216</td><td>~86.6s</td><td>Rank, Action</td>
+                        <td><span class="domain-tag domain-daily">Daily</span></td>
+                        <td><a href="https://epic-kitchens.github.io/BEST" class="ds-link" target="_blank" rel="noopener">🔗</a></td>
+                    </tr>
+                    <tr>
+                        <td>AQA-7</td><td>2019</td><td>1,189</td><td>~6.7s</td><td>Score, Action</td>
+                        <td><span class="domain-tag domain-sport">Sport</span></td>
+                        <td><a href="http://rtis.oit.unlv.edu/datasets.html" class="ds-link" target="_blank" rel="noopener" title="UNLV RTIS Datasets">🔗</a></td>
+                    </tr>
+                    <tr>
+                        <td>MTL-AQA</td><td>2019</td><td>1,412</td><td>~4.1s</td><td>Score, Action, Desc.</td>
+                        <td><span class="domain-tag domain-sport">Sport</span></td>
+                        <td><a href="https://github.com/ParitoshParmar/MTL-AQA" class="ds-link" target="_blank" rel="noopener">🔗</a></td>
+                    </tr>
+                    <tr>
+                        <td>Fis-V</td><td>2019</td><td>500</td><td>~170s</td><td>Score</td>
+                        <td><span class="domain-tag domain-sport">Sport</span></td>
+                        <td><a href="https://github.com/loadder/MS_LSTM" class="ds-link" target="_blank" rel="noopener">🔗</a></td>
+                    </tr>
+                    <tr>
+                        <td>BEST</td><td>2019</td><td>500</td><td>~187.6s</td><td>Grade, Rank, Action</td>
+                        <td><span class="domain-tag domain-daily">Daily</span></td>
+                        <td><a href="https://epic-kitchens.github.io/BEST" class="ds-link" target="_blank" rel="noopener">🔗</a></td>
+                    </tr>
+                    <tr>
+                        <td>KIMORE</td><td>2019</td><td>353</td><td>~29.9s</td><td>Score, Action</td>
+                        <td><span class="domain-tag domain-rehab">Rehab</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>TASD-2</td><td>2020</td><td>606</td><td>~4.1s</td><td>Score, Action</td>
+                        <td><span class="domain-tag domain-sport">Sport</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Rhythmic Gym.</td><td>2020</td><td>1,000</td><td>~95s</td><td>Score, Action</td>
+                        <td><span class="domain-tag domain-sport">Sport</span></td>
+                        <td><a href="https://github.com/lingan1996/ACTION-NET" class="ds-link" target="_blank" rel="noopener">🔗</a></td>
+                    </tr>
+                    <tr>
+                        <td>PISA (Piano-Skills)</td><td>2021</td><td>992</td><td>~160fr</td><td>Grade, Difficulty</td>
+                        <td><span class="domain-tag domain-music">Music</span></td>
+                        <td><a href="https://github.com/ParitoshParmar/Piano-Skills-Assessment" class="ds-link" target="_blank" rel="noopener">🔗</a></td>
+                    </tr>
+                    <tr>
+                        <td>FR-FS</td><td>2021</td><td>417</td><td>~103fr</td><td>Grade, Action</td>
+                        <td><span class="domain-tag domain-sport">Sport</span></td>
+                        <td><a href="https://github.com/Shunli-Wang/TSA-Net" class="ds-link" target="_blank" rel="noopener">🔗</a></td>
+                    </tr>
+                    <tr>
+                        <td>FS1000</td><td>2021</td><td>1,000</td><td>—</td><td>Score, Action</td>
+                        <td><span class="domain-tag domain-sport">Sport</span></td>
+                        <td><a href="https://github.com/AndyFrancesco29/Audio-Visual-Figure-Skating" class="ds-link" target="_blank" rel="noopener">🔗</a></td>
+                    </tr>
+                    <tr>
+                        <td>SMART</td><td>2021</td><td>5,000</td><td>~420fr</td><td>Score, Action</td>
+                        <td><span class="domain-tag domain-sport">Sport</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>SimSurgSkill</td><td>2021</td><td>315</td><td>—</td><td>Score, Action</td>
+                        <td><span class="domain-tag domain-surgery">Surgery</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Fitness-AQA</td><td>2022</td><td>21,284</td><td>~4.1s</td><td>Grade, Action</td>
+                        <td><span class="domain-tag domain-fitness">Fitness</span></td>
+                        <td><a href="https://github.com/ParitoshParmar/Fitness-AQA" class="ds-link" target="_blank" rel="noopener">🔗</a></td>
+                    </tr>
+                    <tr>
+                        <td>FineDiving</td><td>2022</td><td>3,000</td><td>~4.2s</td><td>Score, Action, Step</td>
+                        <td><span class="domain-tag domain-sport">Sport</span></td>
+                        <td><a href="https://github.com/xujinglin/FineDiving" class="ds-link" target="_blank" rel="noopener">🔗</a></td>
+                    </tr>
+                    <tr>
+                        <td>Assembly101</td><td>2022</td><td>4,321</td><td>~426s</td><td>Score, Action</td>
+                        <td><span class="domain-tag domain-im">Industrial</span></td>
+                        <td><a href="https://assembly-101.github.io/" class="ds-link" target="_blank" rel="noopener">🔗</a></td>
+                    </tr>
+                    <tr>
+                        <td>LOGO</td><td>2023</td><td>200</td><td>~204.2s</td><td>Score, Action, Form.</td>
+                        <td><span class="domain-tag domain-sport">Sport</span></td>
+                        <td><a href="https://github.com/shiyi-zh0408/LOGO" class="ds-link" target="_blank" rel="noopener">🔗</a></td>
+                    </tr>
+                    <tr>
+                        <td>FineFS</td><td>2023</td><td>1,167</td><td>~215s</td><td>Score, Action</td>
+                        <td><span class="domain-tag domain-sport">Sport</span></td>
+                        <td><a href="https://github.com/yanliji/FineFS-dataset" class="ds-link" target="_blank" rel="noopener">🔗</a></td>
+                    </tr>
+                    <tr>
+                        <td>PaSk</td><td>2023</td><td>1,018</td><td>~10.7s</td><td>Score</td>
+                        <td><span class="domain-tag domain-sport">Sport</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>CDRG</td><td>2023</td><td>240</td><td>~14.7s</td><td>Rank, Action</td>
+                        <td><span class="domain-tag domain-dance">Dance</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>GAIA</td><td>2024</td><td>9,180</td><td>~2.8s</td><td>Score, Action</td>
+                        <td><span class="domain-tag domain-aigv">AIGV</span></td>
+                        <td><a href="https://github.com/zijianchen98/GAIA" class="ds-link" target="_blank" rel="noopener">🔗</a></td>
+                    </tr>
+                    <tr>
+                        <td>EgoExo-4D</td><td>2024</td><td>5,035</td><td>~312s</td><td>Grade, Action</td>
+                        <td><span class="domain-tag domain-daily">Daily</span></td>
+                        <td><a href="https://ego-exo4d-data.org/" class="ds-link" target="_blank" rel="noopener">🔗</a></td>
+                    </tr>
+                    <tr>
+                        <td>EgoExo-Learn</td><td>2024</td><td>3,304</td><td>~10s</td><td>Rank, Action</td>
+                        <td><span class="domain-tag domain-daily">Daily</span></td>
+                        <td><a href="https://github.com/OpenGVLab/EgoExoLearn" class="ds-link" target="_blank" rel="noopener">🔗</a></td>
+                    </tr>
+                    <tr>
+                        <td>EgoExo-Fitness</td><td>2024</td><td>6,131</td><td>~18.8s</td><td>Score, Action, Desc.</td>
+                        <td><span class="domain-tag domain-fitness">Fitness</span></td>
+                        <td><a href="https://github.com/iSEE-Laboratory/EgoExo-Fitness" class="ds-link" target="_blank" rel="noopener">🔗</a></td>
+                    </tr>
+                    <tr>
+                        <td>AVOS</td><td>2024</td><td>1,997</td><td>—</td><td>Grade, Action</td>
+                        <td><span class="domain-tag domain-surgery">Surgery</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>UJ-AQA</td><td>2025</td><td>8,540</td><td>~28fr</td><td>Score</td>
+                        <td><span class="domain-tag domain-sport">Sport</span></td>
+                        <td><a href="https://github.com/dvanderhaar/uj-aqa-cricketvision" class="ds-link" target="_blank" rel="noopener">🔗</a></td>
+                    </tr>
+                    <tr>
+                        <td>BASKET</td><td>2025</td><td>32,232</td><td>~500s</td><td>Grade, Action</td>
+                        <td><span class="domain-tag domain-sport">Sport</span></td>
+                        <td><a href="https://github.com/yulupan00/BASKET" class="ds-link" target="_blank" rel="noopener">🔗</a></td>
+                    </tr>
+                    <tr>
+                        <td>FLEX</td><td>2025</td><td>7,512</td><td>~234fr</td><td>Score, Action, Desc., sEMG</td>
+                        <td><span class="domain-tag domain-fitness">Fitness</span></td>
+                        <td><a href="https://haoyin116.github.io/FLEX_Dataset" class="ds-link" target="_blank" rel="noopener">🔗</a></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        
-        <div class="item has-text-centered">
-          <!-- Updated image with custom width and height -->
-          <img src="static/images/Fig9_Sankey.png" alt="Paper number" style="width: 100%; max-width: 800px; height: auto;"/>
-          <h2 class="subtitle">
-            An intuitive visualization of the annual distribution of publicly available datasets, including their titles
-and corresponding domains.
-          </h2>
+
+        <div class="fig-row">
+            <div class="fig">
+                <object data="Fig8_Datasets_Sample.pdf" type="application/pdf" width="100%" height="250" style="border:none">
+                    <p>📊 <a href="Fig8_Datasets_Sample.pdf" target="_blank">View Sample Figure (PDF)</a></p>
+                </object>
+                <div class="fig-caption"><strong>Action samples</strong> across 9 dataset domains.</div>
+            </div>
+            <div class="fig">
+                <object data="Fig9_Sankey.pdf" type="application/pdf" width="100%" height="250" style="border:none">
+                    <p>📊 <a href="Fig9_Sankey.pdf" target="_blank">View Sankey Chart (PDF)</a></p>
+                </object>
+                <div class="fig-caption"><strong>Sankey diagram.</strong> Dataset publication flow by year × domain.</div>
+            </div>
         </div>
 
-        <div class="item has-text-centered">
-          <!-- Updated image with custom width and height -->
-          <img src="static/images/Fig10_Timeline.png" alt="Paper number" style="width: 100%; max-width: 800px; height: auto;"/>
-          <h2 class="subtitle">
-            Timeline of representative AQA methodologies from 2014 to 2024.
-          </h2>
+        <h3>Domain Distribution</h3>
+        <div class="stats-row" style="grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));">
+            <div class="stat-card"><div class="stat-num">17</div><div class="stat-label">Sport</div></div>
+            <div class="stat-card"><div class="stat-num">3</div><div class="stat-label">Surgery</div></div>
+            <div class="stat-card"><div class="stat-num">2</div><div class="stat-label">Rehab</div></div>
+            <div class="stat-card"><div class="stat-num">4</div><div class="stat-label">Daily</div></div>
+            <div class="stat-card"><div class="stat-num">1</div><div class="stat-label">Music</div></div>
+            <div class="stat-card"><div class="stat-num">3</div><div class="stat-label">Fitness</div></div>
+            <div class="stat-card"><div class="stat-num">1</div><div class="stat-label">Industrial</div></div>
+            <div class="stat-card"><div class="stat-num">1</div><div class="stat-label">Dance</div></div>
+            <div class="stat-card"><div class="stat-num">1</div><div class="stat-label">AIGV</div></div>
+        </div>
+    </section>
+
+    <!-- ── 4. Trends ── -->
+    <section class="card" id="trends">
+        <h2><span class="num">2</span> Seven Principal Research Trends</h2>
+
+        <div class="insight">
+            We organize the past decade of AQA research into <strong>7 principal trends</strong>, evolving from fundamental coarse-grained assessment to fine-grained, multimodal, generalized, interpretable, and comprehensive paradigms&mdash;along with continual learning and self-supervised approaches.
         </div>
 
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End image carousel -->
-
-
-<!-- BibText citation + copy to clipboard -->
-<section class="section" id="Code">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <div class="code-container">
-      <pre><code class="code-content language-text">
-      @article{yin2025decadeactionqualityassessment,
-      title={A Decade of Action Quality Assessment: Largest Systematic Survey of Trends, Challenges, and Future Directions}, 
-      author={Hao Yin and Paritosh Parmar and Daoliang Xu and Yang Zhang and Tianyou Zheng and Weiwei Fu},
-      journal={arXiv preprint arXiv:2502.02817},
-      year={2025},
-      }
-      </code></pre>
-      <button class="copy-button" aria-label="Copy to clipboard">
-        <svg class="copy-icon" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
-        </svg>
-        <svg class="checkmark-icon" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
-        </svg>
-      </button>
-      <div class="copy-tooltip">Copy to clipboard</div>
-    </div>
-  </div>
-</section>
-    
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/ai4co/research-project-page-template" target="_blank">Research Project Page Template</a> which is based on 
-            the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> and the 
-            <a href="https://nerfies.github.io" target="_blank">Nerfies project page</a>. You are free to borrow the of this website, we just ask that you link back to this page in the footer.
-            This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
+        <!-- Trend Cards Grid -->
+        <div class="trend-grid">
+            <div class="trend-card">
+                <div class="trend-num">01</div>
+                <h4>🔥 Fine-grained AQA</h4>
+                <p>The dominant trend (2018–2025). Four sub-directions:</p>
+                <ul>
+                    <li><strong>Segment-aware:</strong> S3D, TSA-Net, FineParser, GOAT — temporal decomposition into atomic sub-actions</li>
+                    <li><strong>Actor-object centric:</strong> JR-GCN, EAGLE-Eye, DuRA — joint-relation and object-context modeling</li>
+                    <li><strong>Uncertainty-aware:</strong> USDL, DAE, UD-AQA — distributional scoring with confidence estimation</li>
+                    <li><strong>Contrastive regression:</strong> CoRe, RGR, MCoRe — relative quality via pairwise/group ranking</li>
+                </ul>
+                <p>Top method: <strong>T²CR</strong> (ρ=0.9638 on MTL-AQA).</p>
+            </div>
+            <div class="trend-card">
+                <div class="trend-num">02</div>
+                <h4>🎯 Multimodal AQA</h4>
+                <p>Beyond RGB: fusion of multiple sensing modalities.</p>
+                <ul>
+                    <li><strong>Skeleton:</strong> ST-GCN, EGCN++, HGCN — pose-graph based</li>
+                    <li><strong>Audio:</strong> PISA, Skating-Mixer — audio-visual fusion</li>
+                    <li><strong>Vision-language:</strong> NAE (ρ=0.9790), VATP-Net, SGN — text-guided scoring</li>
+                    <li><strong>Optical flow:</strong> PAMFN — motion-aware fusion</li>
+                    <li><strong>Physiological:</strong> FLEX — sEMG signal integration</li>
+                </ul>
+                <p>Skeleton adds +7.76% ρ over RGB alone; multi-modal late fusion avoids gradient interference.</p>
+            </div>
+            <div class="trend-card">
+                <div class="trend-num">03</div>
+                <h4>🌐 Generalization</h4>
+                <p>Cross-action, cross-dataset, cross-domain deployment.</p>
+                <ul>
+                    <li><strong>Adaptive Net, ASGTN:</strong> NAS-based architecture search</li>
+                    <li><strong>AdaST:</strong> adaptive skill transfer (0.8832 Acc on EPIC-Skill)</li>
+                    <li><strong>CoFInAl, PHI:</strong> coarse-to-fine instruction alignment</li>
+                </ul>
+                <p>Domain shift from action recognition pretraining remains the core challenge.</p>
+            </div>
+            <div class="trend-card">
+                <div class="trend-num">04</div>
+                <h4>🔄 Continual Learning</h4>
+                <p>Addressing catastrophic forgetting as new action types emerge.</p>
+                <ul>
+                    <li><strong>PECoP:</strong> parameter-efficient continual pretraining (ρ=0.9520)</li>
+                    <li><strong>Continual-AQA:</strong> feature-score correlation rehearsal</li>
+                    <li><strong>MAGR:</strong> manifold-aligned graph regularization</li>
+                </ul>
+                <p>Rapidly emerging direction (2024–2025); key for real-world deployment across expanding action sets.</p>
+            </div>
+            <div class="trend-card">
+                <div class="trend-num">05</div>
+                <h4>🔍 Explainable AQA</h4>
+                <p>From black-box regression to transparent, interpretable assessment.</p>
+                <ul>
+                    <li><strong>Process-level:</strong> NeuroSymbolic-AQA (rule-based, EP=0.9610), FineCausal (causal intervention, ρ=0.9447)</li>
+                    <li><strong>Outcome-level:</strong> TechCoach (descriptive coaching text), ExpertAF (corrective pose generation), SkillNet (human-AI collaboration)</li>
+                </ul>
+                <p>Fastest-growing trend in 2024–2025; unlocks AI coaching and physiotherapy applications.</p>
+            </div>
+            <div class="trend-card">
+                <div class="trend-num">06</div>
+                <h4>🧩 Comprehensive AQA</h4>
+                <p>Accounting for all contributing factors — not just the actor.</p>
+                <ul>
+                    <li><strong>VTPE:</strong> surgical tools + operative field + events + surgeon interaction</li>
+                    <li><strong>PSGCN-RTCN:</strong> skeleton + appearance + facial expression + scene context</li>
+                </ul>
+                <p>Necessary for real-world settings where external factors (equipment, environment, collaboration) influence quality.</p>
+            </div>
+            <div class="trend-card">
+                <div class="trend-num">07</div>
+                <h4>🧪 Self-Supervised AQA</h4>
+                <p>Overcoming expensive expert annotation burden.</p>
+                <ul>
+                    <li><strong>SAP-Net:</strong> self-supervised sub-action parsing (ρ=0.8450 on FineDiving)</li>
+                    <li><strong>S⁴AQA:</strong> semi-supervised segment feature recovery</li>
+                    <li><strong>TRS:</strong> teacher-reference-student architecture</li>
+                    <li><strong>VQD-Net:</strong> quantized vector decoupling for semi-supervised AQA</li>
+                </ul>
+                <p>Critical for democratizing AQA into low-resource domains and new action types.</p>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
+
+        <div class="fig">
+            <object data="Fig10_Timeline.pdf" type="application/pdf" width="100%" height="300" style="border:none">
+                <p>📊 <a href="Fig10_Timeline.pdf" target="_blank">Open Methodology Timeline (PDF)</a></p>
+            </object>
+            <div class="fig-caption">
+                <strong>Methodology timeline.</strong> Evolution of representative AQA methods from 2014 to 2025 across all 7 trends.
+            </div>
+        </div>
+
+        </section>
+
+    <!-- ── 5. Challenges & Future Directions ── -->
+    <section class="card" id="future">
+        <h2><span class="num">3</span> Challenges &amp; Future Directions</h2>
+
+        <div class="insight">
+            Despite dramatic progress over the past decade, significant challenges remain. At the action level, inherent complexity and the lack of a true "gold standard" reference limit generalization. At the dataset level, the field needs larger scale, broader subject/action diversity, physiological multimodality (e.g., sEMG, IMU), and richer annotation granularity. At the methodology level, key open problems include real-time inference, unified evaluation metrics, interpretability, multimodal robustness under missing modalities, and ultimately moving toward <strong>General AQA Agents</strong> capable of multi-domain assessment with safety-governance for high-stakes applications.
+        </div>
+
+        </section>
+
+    <!-- ── 6. BibTeX / Citation ── -->
+    <section class="card" id="bibtex">
+        <h2><span class="num">§</span> Citation</h2>
+        <p style="font-size:0.88rem; color:var(--text-mid); margin-bottom:1rem;">If you find this survey useful, please cite our IJCV 2026 paper:</p>
+        <div class="bib-wrap">
+            <button class="bib-btn" onclick="copyBibtex()">📋 Copy</button>
+            <pre id="bibtexText">@article{yin2026decadeactionqualityassessment,
+  title     = {A Decade of Action Quality Assessment: Largest
+               Systematic Survey of Trends, Challenges,
+               and Future Directions},
+  author    = {Yin, Hao and Parmar, Paritosh and Xu, Daoliang and
+               Zhang, Yang and Zheng, Tianyou and Fu, Weiwei},
+  journal   = {International Journal of Computer Vision (IJCV)},
+  year      = {2026},
+  doi       = {10.1007/s11263-025-02672-4},
+  url       = {https://github.com/HaoYin116/Survey_of_AQA}
+}</pre>
+        </div>
+    </section>
+
+</main>
+
+<!-- ════════════════════ Footer ════════════════════ -->
+<footer class="footer">
+    <p>A Decade of Action Quality Assessment · <a href="https://link.springer.com/article/10.1007/s11263-025-02672-4" target="_blank" rel="noopener">IJCV 2026</a></p>
+    <p>Template adapted from <a href="https://github.com/ai4co/research-project-page-template" target="_blank" rel="noopener">ai4co/research-project-page-template</a> · CC BY-SA 4.0</p>
+    <p style="margin-top:0.5rem">Correspondence: fuww@sibet.ac.cn · zhengty@sibet.ac.cn</p>
 </footer>
 
-  </body>
-  </html>
+<!-- Toast -->
+<div class="toast" id="toast">Copied to clipboard!</div>
+
+<script>
+    // ── Mobile Nav Toggle ──
+    function toggleNav() {
+        document.getElementById('navLinks').classList.toggle('open');
+    }
+    document.querySelectorAll('#navLinks a').forEach(l => {
+        l.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
+    });
+
+    // ── Copy BibTeX ──
+    function copyBibtex() {
+        navigator.clipboard.writeText(document.getElementById('bibtexText').innerText).then(() => {
+            const t = document.getElementById('toast');
+            t.classList.add('show');
+            setTimeout(() => t.classList.remove('show'), 2000);
+        });
+    }
+
+    // ── Scroll Spy ──
+    const secs = document.querySelectorAll('section[id]');
+    const links = document.querySelectorAll('.nav-links a');
+    window.addEventListener('scroll', () => {
+        let cur = '';
+        secs.forEach(s => { if (window.scrollY >= s.offsetTop - 100) cur = s.id; });
+        links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + cur));
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="693" height="347" viewBox="0 0 693 347" role="img" aria-label="AQA pipeline from input modalities to feedback">
+  <defs>
+    <linearGradient id="stage1" x1="0" x2="1">
+      <stop offset="0" stop-color="#e7b4a6"/>
+      <stop offset="1" stop-color="#f2cfc5"/>
+    </linearGradient>
+    <linearGradient id="stage2" x1="0" x2="1">
+      <stop offset="0" stop-color="#aab5dd"/>
+      <stop offset="1" stop-color="#c6cfee"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#315f7d"/>
+    </marker>
+    <marker id="arrowWarm" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#ee785a"/>
+    </marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000" flood-opacity=".22"/>
+    </filter>
+  </defs>
+  <rect width="693" height="347" rx="4" fill="#f7f4ef"/>
+  <g filter="url(#shadow)">
+    <rect x="18" y="28" width="322" height="291" rx="3" fill="url(#stage1)"/>
+    <rect x="340" y="28" width="335" height="291" rx="3" fill="url(#stage2)"/>
+  </g>
+  <text x="179" y="57" text-anchor="middle" font-family="Georgia, serif" font-size="19" font-weight="700" fill="#1f2428">Stage 1</text>
+  <text x="179" y="79" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#252525">Extract features from recording</text>
+  <text x="507" y="57" text-anchor="middle" font-family="Georgia, serif" font-size="19" font-weight="700" fill="#1f2428">Stage 2</text>
+  <text x="507" y="79" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#252525">Map features to results</text>
+  <g transform="translate(56 112)">
+    <rect width="78" height="60" rx="3" fill="#2f5f83"/>
+    <rect x="7" y="7" width="64" height="46" rx="2" fill="#e7eef5"/>
+    <path d="M7 39 Q28 20 42 34 T71 28 V53 H7Z" fill="#65a7c7"/>
+    <circle cx="50" cy="19" r="8" fill="#f4c77b"/>
+  </g>
+  <g fill="none" stroke="#8b9a9f" stroke-width="4" opacity=".75">
+    <rect x="54" y="207" width="26" height="22" rx="2"/>
+    <rect x="76" y="226" width="26" height="22" rx="2"/>
+    <rect x="98" y="245" width="26" height="22" rx="2"/>
+    <path d="M146 223 l34 24 l-24 17"/>
+    <path d="M84 286 q30 -22 58 5 q23 20 54 3"/>
+  </g>
+  <g transform="translate(180 152)">
+    <path d="M56 0 C86 40 89 91 57 132" fill="none" stroke="#315f7d" stroke-width="9" marker-end="url(#arrow)"/>
+    <path d="M-20 128 C11 88 14 37 -18 5" fill="none" stroke="#6aa4b5" stroke-width="9" marker-end="url(#arrow)"/>
+    <circle cx="32" cy="70" r="44" fill="#f8f1ea" stroke="#ffffff" stroke-width="6"/>
+    <text x="32" y="61" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#61737c">AQA</text>
+    <text x="32" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#61737c">Model</text>
+    <g stroke="#7aa0aa" stroke-width="4" fill="none">
+      <path d="M5 72 h54"/>
+      <path d="M32 43 v54"/>
+      <circle cx="32" cy="70" r="15"/>
+    </g>
+  </g>
+  <g transform="translate(291 110)">
+    <rect width="12" height="58" fill="#446ca8"/>
+    <rect x="0" y="86" width="12" height="58" fill="#548b68"/>
+    <rect x="0" y="172" width="12" height="58" fill="#9f6b4f"/>
+  </g>
+  <path d="M340 170 C382 171 405 124 432 103" fill="none" stroke="#ee785a" stroke-width="10" marker-end="url(#arrowWarm)"/>
+  <path d="M340 178 C386 179 410 226 442 251" fill="none" stroke="#315f7d" stroke-width="10" marker-end="url(#arrow)"/>
+  <g transform="translate(447 97)" stroke="#fff" stroke-width="6" fill="#fff" opacity=".95">
+    <circle cx="0" cy="37" r="7"/>
+    <circle cx="58" cy="0" r="7"/>
+    <circle cx="58" cy="73" r="7"/>
+    <circle cx="105" cy="37" r="7"/>
+    <path d="M0 37 L58 0 L105 37 L58 73 Z"/>
+    <path d="M58 0 L58 73"/>
+  </g>
+  <text x="501" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#333">Statistical</text>
+  <text x="501" y="229" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#333">or</text>
+  <text x="501" y="253" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#333">Rule-based</text>
+  <path d="M562 178 h55" stroke="#315f7d" stroke-width="12" marker-end="url(#arrow)"/>
+  <g fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="619" y="82" width="43" height="56" rx="8"/>
+    <text x="641" y="119" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#fff" stroke="none">100</text>
+    <rect x="618" y="202" width="49" height="67" rx="4"/>
+    <path d="M630 220 h25 M630 237 h25 M630 254 h18"/>
+    <path d="M621 286 h44 v34 h-44z M633 286 l-4 -15 h28 l-4 15"/>
+  </g>
+  <g fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round">
+    <circle cx="487" cy="291" r="14"/>
+    <circle cx="523" cy="291" r="14"/>
+    <path d="M501 267 l8 48 M468 281 l40 29 M545 281 l-40 29"/>
+  </g>
+</svg>
